@@ -1,73 +1,97 @@
-import dronekit_sitl
-import dronekit
-import json
 import argparse
+import json
 import os
-import threading
-import time
-import signal
-import util
-import logging
-import simplegcs
-from dronekit import connect, VehicleMode, LocationGlobalRelative
 
-# make sure you change this so that it's correct for your system
-ARDUPATH = os.path.join('/', 'win', 'Work', 'git', 'ardupilot')
+from dronekit import LocationGlobalRelative
+
+import experimentrunner.Logger as Logger
+import experimentrunner.Vehicle as Vehicle
+from experimentrunner import ExperimentConfig as config
+c
+########### Configuration Properties ###########
+
+SIMPLE_GCS = False
+ARDUPATH = os.path.join('/', 'home', 'uav', 'git', 'ardupilot')
+LOG_FILE_NAME = "experiment.log"
+Vehicle.LOG_TIME = 0.5
+
+########### Configuration Properties ###########
 
 
-def main(ardupath=None):
-    if ardupath is not None:
-        global ARDUPATH
-        ARDUPATH = ardupath
+if SIMPLE_GCS:
+    from experimentrunner.Vehicle import GCSVehicleInitializer  as VehicleManager
+else:
+    from experimentrunner.Vehicle import SimpleVehicleInitializer as VehicleManager
 
 
-    connect()
-    print("Registering Drones...")
-    vehicle1=addDrone([41.715446209367,-86.242847096132,0],"Frank")
+def runmission():
+    config.getMission().run()
 
-    print("Taking off...")
-    vehicle1.simple_takeoff(10)
-    time.sleep(10)
-    print("Going somewhere...")
 
-    gotoWaypoint(vehicle1,41.515446209367,-86.342847096132, 40,3)
+def checkCommand(command):
+    if (command['id'] == 'TAKE-OFF'):
+        pass
+    elif (command['id'] == 'GOTO'):
+        pass
+    elif (command['id'] == 'RTL'):
+        pass
+    else:
+        raise NotImplementedError("Unknown command: " + command['id'])
 
-    # point1 = LocationGlobalRelative(41.515446209367,-86.342847096132, 40)
-    # vehicle1.simple_goto(point1)
 
-    # point2 = LocationGlobalRelative(41.515446209367, -86.342847096132, 40)
-    # vehicle2.simple_goto(point2)
+def executeCommand(command, vehiclehandler):
+    if (command['id'] == 'TAKE-OFF'):
+        altitude = command['altitude']
+        print("TAKING OFF TO: " + str(altitude))
+        vehiclehandler.arm_and_takeoff(altitude)
+    elif (command['id'] == 'GOTO'):
+        lat = float(command['latitude'])
+        lon = float(command['longitude'])
+        alt = float(command['altitude'])
+        speed = float(command['speed'])
+        print("GOING: " + str(speed))
+        vehiclehandler.fly_to(LocationGlobalRelative(lat, lon, alt), speed, command['tag-start'], command['tag-end'])
+    elif (command['id'] == 'RTL'):
+        vehiclehandler.return_to_launch()
 
-def connect():
-    print("Connecting to Dronology...")
-    print("SITL path: "+ARDUPATH)
-    global GCS
-    GCS = simplegcs.SimpleGCS(ARDUPATH,"simplegcs")
-    GCS.connect()
-    time.sleep(10)
 
-def gotoWaypoint(vehicle,xcoord,ycoord,zcoord, airspeed=10):
-    vehicle.airspeed = airspeed
-    point = LocationGlobalRelative(xcoord,ycoord,zcoord)
-    vehicle.simple_goto(point)
+def loadmission(filename):
+    with open(filename) as f:
+        data = json.load(f)
+    for command in data['commands']:
+        checkCommand(command)
 
-def addDrone(home, name=None):
-    vehicle = GCS.registerDrone(home,name)
-    time.sleep(5)
-    while not vehicle.is_armable:
-        print(" Waiting for vehicle to initialise...")
-        time.sleep(3)
-    print("Arming motors")
-    vehicle.mode = VehicleMode("GUIDED")
-    vehicle.armed = True
-    while not vehicle.armed:
-        print(" Waiting for arming...")
-        time.sleep(1)
-    return vehicle
+    Logger.initLogger(LOG_FILE_NAME)
+    Logger.startLogging("1", "ASD", "VRTL", "EX1");
+
+    home = str(data['meta-data']['home'])
+    CONNECTION_STRING = "/dev/ttyUSB0,56700"
+    vehicleManager = VehicleManager();
+    vehicle = vehicleManager.initializeVehicle(ARDUPATH, CONNECTION_STRING, home)
+
+    for command in data['commands']:
+        executeCommand(command, vehicleManager)
+
+    # pprint(data)
+
+
+def main():
+    parser = argparse.ArgumentParser(description='Commands vehicle using vehicle.simple_goto.')
+    parser.add_argument('--connect',
+                        help="Vehicle connection target string. If not specified, SITL automatically started and used.")
+    parser.add_argument('--missionfile', help="json-file with mission steps")
+    args = parser.parse_args()
+
+    connection_string = args.connect
+    filename = args.missionfile
+
+    if filename is None:
+        runmission();
+    else:
+        loadmission(filename)
+
 
 if __name__ == '__main__':
-    ap = argparse.ArgumentParser()
-    #ap.add_argument('path_to_config', type=str, help='the path to the drone configuration file.')
-    ap.add_argument('--ardupath', type=str, default=ARDUPATH)
-    args = ap.parse_args()
-    main(ardupath=args.ardupath)
+    main()
+
+
