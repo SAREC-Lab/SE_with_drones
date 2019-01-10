@@ -3,7 +3,7 @@ import dronekit
 import os
 
 
-vehicle = dronekit.connect("/dev/ttyUSB0",wait_ready=True)
+vehicle = dronekit.connect("/dev/ttyUSB0",baud=57600,wait_ready=True)
 vehicle.wait_ready(timeout=120)
 
 while not vehicle.is_armable:

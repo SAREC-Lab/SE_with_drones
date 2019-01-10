@@ -55,10 +55,9 @@ class VehicleWrapper():
         self.vehicle.mode = VehicleMode("LAND")
 
 
-ARDUPATH = os.path.join('/', 'win', 'Work', 'git', 'ardupilot')
+ARDUPATH = os.path.join('/', 'home', 'uav', 'git', 'ardupilot')
+#CONNECTION_STRING = "/dev/ttyUSB0,57600"
 CONNECTION_STRING = None
-#CONNECTION_STRING="/dev/ttyS31,57600"
-CONNECTION_STRING="udpin:0.0.0.0:14550"
 if __name__ == '__main__':
      home = "41.714521, -86.241855"
      wrapper= VehicleWrapper()

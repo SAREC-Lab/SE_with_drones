@@ -154,7 +154,6 @@ if __name__ == '__main__':
     fly_to(vehicle, LocationGlobalRelative(41.71500, -86.24230, 20), 10, "GOTO-1-START", "GOTO-1-END")
     print
     "Returning to Launch"
-    logmessage(vehicle, "RTL", "")
     vehicle.mode = VehicleMode("RTL")
     # Close vehicle object before exiting script
     print

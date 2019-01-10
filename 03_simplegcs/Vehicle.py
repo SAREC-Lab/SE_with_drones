@@ -5,10 +5,9 @@ import threading
 import dronekit_sitl
 from dronekit import connect, VehicleMode, LocationGlobalRelative
 import time
-from experimentrunner.Logger import Logger as Log
-import experimentrunner.Util as util
-import GCS.simplegcs as simplegcs
-from experimentrunner import Logger
+from Logger import Logger as Log
+#import Util as util
+import simplegcs as simplegcs
 
 
 LOG_TIME=0.5
