@@ -20,7 +20,7 @@ if not connection_string:
     #sitl = dronekit_sitl.start_default()
     #connection_string = sitl.connection_string()
     ardupath = "/home/uav/git/ardupilot"
-    home = "41.7144367,-86.2417136,221,0"
+    home = "41.714521,-86.241855,221,0"
     sitl_defaults = os.path.join(ardupath, 'Tools', 'autotest', 'default_params', 'copter.parm')
     sitl_args = ['-I{}'.format(0), '--home', home, '--model', '+', '--defaults', sitl_defaults]
     sitl = dronekit_sitl.SITL(path=os.path.join(ardupath, 'build', 'sitl', 'bin', 'arducopter'))
