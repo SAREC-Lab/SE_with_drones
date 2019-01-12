@@ -2,24 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0798d3b0-c6a1-485c-a246-ca71e4027ac6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01_gettingstarted/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/02_basiccommands.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/03_simplegcs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_gettingstarted/simple_connect_DRONE.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01_gettingstarted/simple_connect_DRONE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_basiccommands/goto.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02_basiccommands/goto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_basiccommands/takeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02_basiccommands/takeoff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GCS_Runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/GCS_Runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Vehicle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/gcs-main.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/gcs-main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Compile-Dronology.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Compile-Dronology.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/Run-Dronology.sh" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/Run-Dronology.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,11 +53,29 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GCS_Runner.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+            <state relative-caret-position="161">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="18" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Compile-Dronology.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/scripts/Run-Dronology.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -94,25 +98,27 @@
         <option value="$PROJECT_DIR$/simplegcs.py" />
         <option value="$PROJECT_DIR$/Logger.py" />
         <option value="$PROJECT_DIR$/Vehicle.py" />
+        <option value="$PROJECT_DIR$/scripts/Compile-Dronology.sh" />
+        <option value="$PROJECT_DIR$/scripts/Run-Dronology.sh" />
         <option value="$PROJECT_DIR$/GCS_Runner.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="292" />
+    <option name="x" value="278" />
     <option name="y" value="24" />
     <option name="width" value="1400" />
-    <option name="height" value="1028" />
+    <option name="height" value="911" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -120,10 +126,16 @@
               <item name="03_simplegcs" type="b2602c69:ProjectViewProjectNode" />
               <item name="03_simplegcs" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="03_simplegcs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="03_simplegcs" type="462c0819:PsiDirectoryNode" />
+              <item name="scripts" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -183,15 +195,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="24" width="1400" height="1028" extended-state="0" />
-    <editor active="true" />
+    <frame x="278" y="24" width="1400" height="911" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24981844" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24981844" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34961155" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4017857" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -239,10 +250,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Compile-Dronology.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Run-Dronology.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="39" selection-start-line="3" selection-start-column="39" selection-end-line="3" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/GCS_Runner.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="14" column="22" lean-forward="true" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
+        <state relative-caret-position="161">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="18" />
           <folding>
             <element signature="e#0#15#0" expanded="true" />
           </folding>

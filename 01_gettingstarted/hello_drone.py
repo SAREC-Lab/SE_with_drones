@@ -5,7 +5,7 @@ from dronekit import connect, VehicleMode, time
 import argparse
 
 parser = argparse.ArgumentParser(description='Print out vehicle state information')
-parser.add_argument('--connect',help="vehicle connection target string.")
+parser.add_argument('--connect',help="vehicle connection target string. If not specified, SITL automatically started and used")
 args=parser.parse_args()
 
 connection_string = args.connect
@@ -26,6 +26,7 @@ vehicle.wait_ready(timeout=500)
 #vehicle.wait_ready('autopilot_version')
 
 #Get some vehicle attributes (state)
+print "Autopilot_version: %s" % vehicle.version
 print "Get some vehicle attribute values:"
 print "GPS: %s" % vehicle.gps_0
 print "Battery: %s" % vehicle.battery

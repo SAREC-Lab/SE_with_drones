@@ -2,24 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="12a35749-33bd-4d1a-8bef-9f3c08f32aca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/02_basiccommands.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../02_basiccommands/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/03_simplegcs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/simple_connect_DRONE.py" beforeDir="false" afterPath="$PROJECT_DIR$/simple_connect_DRONE.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_basiccommands/goto.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02_basiccommands/goto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../02_basiccommands/takeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/../02_basiccommands/takeoff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_simplegcs/GCS_Runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/GCS_Runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_simplegcs/Vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/Vehicle.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hello_locationSpecific_drone.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ourCS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/hello_drone.py" beforeDir="false" afterPath="$PROJECT_DIR$/hello_drone.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_simplegcs/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_simplegcs/log/gcs-main.log" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/log/gcs-main.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_simplegcs/scripts/Compile-Dronology.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/scripts/Compile-Dronology.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../03_simplegcs/scripts/Run-Dronology.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/scripts/Run-Dronology.sh" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +22,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hello_drone.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="21" column="87" selection-start-line="21" selection-start-column="87" selection-end-line="21" selection-end-column="87" />
+            <state relative-caret-position="105">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+              <folding>
+                <element signature="e#25#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/hello_locationSpecific_drone.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+              <folding>
+                <element signature="e#25#72#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ourCS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2310">
+              <caret line="241" column="15" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
+              <folding>
+                <element signature="e#139#204#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,10 +67,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/simple_connect_SITL.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="225">
               <caret line="18" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -71,6 +88,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/simple_connect_DRONE.py" />
+        <option value="$PROJECT_DIR$/hello_drone.py" />
+        <option value="$PROJECT_DIR$/ourCS.py" />
+        <option value="$PROJECT_DIR$/hello_locationSpecific_drone.py" />
       </list>
     </option>
   </component>
@@ -106,6 +126,11 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../02_basiccommands" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -118,7 +143,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.hello_drone_DRONE">
+  <component name="RunManager" selected="Python.hello_locationSpecific_drone">
     <configuration name="hello_drone_DRONE" type="PythonConfigurationType" factoryName="Python">
       <module name="01_gettingstarted" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +157,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello_drone.py" />
-      <option name="PARAMETERS" value="--connect &quot;/dev/ttyUSB0&quot;" />
+      <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
@@ -153,6 +178,48 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello_drone.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="hello_locationSpecific_drone" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_gettingstarted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello_locationSpecific_drone.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="ourCS" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="01_gettingstarted" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ourCS.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -208,9 +275,13 @@
       <item itemvalue="Python.hello_drone_SITL" />
       <item itemvalue="Python.simple_connect_DRONE" />
       <item itemvalue="Python.simple_connect_SITL" />
+      <item itemvalue="Python.hello_locationSpecific_drone" />
+      <item itemvalue="Python.ourCS" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.hello_locationSpecific_drone" />
+        <item itemvalue="Python.ourCS" />
         <item itemvalue="Python.hello_drone_SITL" />
         <item itemvalue="Python.simple_connect_DRONE" />
         <item itemvalue="Python.simple_connect_SITL" />
@@ -231,14 +302,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="64" y="-11" width="1841" height="980" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18777293" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18942732" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3289941" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4934911" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -274,13 +346,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/hello_drone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="21" column="87" selection-start-line="21" selection-start-column="87" selection-end-line="21" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple_connect_DRONE.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -293,10 +358,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/simple_connect_SITL.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello_drone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+          <folding>
+            <element signature="e#25#72#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/NASA1.log">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ourCS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2310">
+          <caret line="241" column="15" selection-start-line="241" selection-start-column="15" selection-end-line="241" selection-end-column="15" />
+          <folding>
+            <element signature="e#139#204#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hello_locationSpecific_drone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="94" selection-start-line="23" selection-start-column="94" selection-end-line="23" selection-end-column="94" />
+          <folding>
+            <element signature="e#25#72#0" expanded="true" />
           </folding>
         </state>
       </provider>
