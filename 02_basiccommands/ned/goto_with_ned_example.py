@@ -237,7 +237,6 @@ if sitl is not None:
 ###########################################################################
 # Create the target coordinates
 ###########################################################################
-print ("Targeted coordinates")
 log2 = CoordinateLogger()
 angle = 0
 while angle <= 360:
@@ -248,8 +247,5 @@ while angle <= 360:
 ###########################################################################
 # Plot graph
 ###########################################################################
-#plotter = GraphPlotter("Longitude","Latitude","NED vs target Coordinates")
 plotter = GraphPlotter(log1.lat_array,log1.lon_array,log2.lat_array,log2.lon_array,"Longitude","Latitude","NED vs. target Coordinates")
-#plotter.addLog(log1)
-#plotter.addLog(log2)
 plotter.scatter_plot()
