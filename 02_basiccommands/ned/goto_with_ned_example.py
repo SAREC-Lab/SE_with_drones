@@ -19,7 +19,7 @@ from ned.ned_utilities import ned_controller
 ################################################################################################
 import argparse
 
-parser = argparse.ArgumentParser(description='Commands vehicle using vehicle.simple_goto.')
+parser = argparse.ArgumentParser(description='Commands vehicle using vehicle.simple_goto or NEDs.')
 parser.add_argument('--connect',
                     help="Vehicle connection target string. If not specified, SITL automatically started and used.")
 args = parser.parse_args()
@@ -165,46 +165,63 @@ arm_and_takeoff(10)
 center = Location(vehicle.location.global_relative_frame.lat,
                   vehicle.location.global_relative_frame.lon)  # 83.456453, 43.987633)
 radius = .0001
-angle = 0  #Starting angle is directly east
+angle = 0  #Starting angle
+
+# Fly close to starting position using waypoint
 currentLocation = center
-startingPos = point_on_circle(radius, angle, center.lat, center.lon)  # First position on circle perimeter
+startingPos = point_on_circle(radius*.95, angle+1, center.lat, center.lon)  # Close to first position on circle perimeter
 firstTargetPosition = LocationGlobalRelative(startingPos.lat, startingPos.lon, 10)
 fly_to(vehicle, firstTargetPosition, 10)
 
 # Establish a starting angle to compute next position on circle
-angle = 3
+angle = 0
 
 # Establish an instance of CoordinateLogger
 log1 = CoordinateLogger()
 
 nedcontroller = ned_controller()
 
-while angle <= 360:
-    print("\nNew target" + str(angle))
-    nextTarget = (point_on_circle(radius, angle, center.lat, center.lon))
 
+waypoint_goto = False;
+while angle <= 360:
+
+    # For NED flying compute the NED Velocity vector
+    print("\nNew target " + str(angle))
+    nextTarget = (point_on_circle(radius, angle, center.lat, center.lon))
     currentLocation = Location(vehicle.location.global_relative_frame.lat, vehicle.location.global_relative_frame.lon)
     distance_to_target = get_distance_meters(currentLocation, nextTarget)
     closestDistance=distance_to_target
-    ned = nedcontroller.setNED(currentLocation,nextTarget)
+    ned = nedcontroller.setNed(currentLocation, nextTarget)
+
 
     while distance_to_target > 1:
         currentLocation = Location(vehicle.location.global_relative_frame.lat,
                                    vehicle.location.global_relative_frame.lon)
         distance_to_target = get_distance_meters(currentLocation, nextTarget)
-        if distance_to_target > closestDistance:
+        print ('Current Pos: (' + str(currentLocation.lat) + "," + str(currentLocation.lon) +
+               ') Target Pos: ' + str(nextTarget.lat) + ' Target  lon: ' + str(nextTarget.lon) + ' Distance: ' + str(
+                    distance_to_target) + " NED: " + str(ned.north) + " " + str(ned.east))
+
+        if distance_to_target > closestDistance: #Prevent unwanted fly-by
             break
         else:
             closestDistance = distance_to_target
-        print ('Current Pos: (' + str(currentLocation.lat) + "," + str(currentLocation.lon) +
-               ') Target Pos: ' + str(nextTarget.lat) + ' Target  lon: ' + str(nextTarget.lon) + ' Distance: ' + str(distance_to_target));
+
         currentLocation = Location(vehicle.location.global_relative_frame.lat,
                                    vehicle.location.global_relative_frame.lon)
-        ned = nedcontroller.setNED(currentLocation, nextTarget)
-        nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 1, vehicle)  # changed from 10 to 1!
+        ned = nedcontroller.setNed(currentLocation, nextTarget)
+
+        # Either fly using waypoints or NEDs
+        if waypoint_goto == True:
+            firstTargetPosition = LocationGlobalRelative(nextTarget.lat, nextTarget.lon, 10)
+            fly_to(vehicle, firstTargetPosition, 10)
+        else:
+            nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 1, vehicle)  # changed from 10 to 1!
+
+        #Log data
         log1.add_data(currentLocation.lat,currentLocation.lon)
 
-    angle = angle + 45
+    angle = angle + 1
 
 print("Returning to Launch")
 vehicle.mode = VehicleMode("RTL")
@@ -219,7 +236,7 @@ if sitl is not None:
 ###########################################################################
 # Create the target coordinates
 ###########################################################################
-print ("Perfect plot")
+print ("Targeted coordinates")
 log2 = CoordinateLogger()
 angle = 0
 while angle <= 360:

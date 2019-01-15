@@ -28,28 +28,6 @@ class CoordinateLogger:
         self.lat_array[-1].append(latitude)
         self.lon_array[-1].append(longitude)
 
-class GraphPlotter2:
-    def __init__(self,xlabel="",ylabel="",title=""):
-        self.loglist =[]
-        self.xlegend = xlabel
-        self.ylegend=ylabel
-        self.title=title
-
-    def addLog(self,coordinatelogger):
-        self.loglist.append([])
-        self.loglist[-1].append(coordinatelogger)
-
-    def scatter_plot(self):
-        for thislog in self.loglist:
-            lats = thislog.lat_array
-            lons = thislog.lon_array
-            plt.plot(lats,lons)
-
-        plt.xlabel(self.xlegend)
-        plt.ylabel(self.ylegend)
-        plt.title(self.title)
-        plt.show()
-
 class GraphPlotter:
     def __init__(self,lat1_array,lon1_array,lat2_array,lon2_array,xlabel="",ylabel="",title=""):
         self.lat1_array=lat1_array
