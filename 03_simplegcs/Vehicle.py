@@ -6,7 +6,7 @@ import dronekit_sitl
 from dronekit import connect, VehicleMode, LocationGlobalRelative
 import time
 from Logger import Logger as Log
-#import Util as util
+import UtilFunctions as util
 import simplegcs as simplegcs
 
 
