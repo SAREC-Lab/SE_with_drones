@@ -3,6 +3,7 @@
 
 """
 Modified from 3DR simple_goto.py
+Added code for flying using NED Velocity Vectors - Jane Cleland-Huang
 """
 import math
 import os
@@ -216,7 +217,7 @@ while angle <= 360:
             firstTargetPosition = LocationGlobalRelative(nextTarget.lat, nextTarget.lon, 10)
             fly_to(vehicle, firstTargetPosition, 10)
         else:
-            nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 1, vehicle)  # changed from 10 to 1!
+            nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 0.1, vehicle)
 
         #Log data
         log1.add_data(currentLocation.lat,currentLocation.lon)

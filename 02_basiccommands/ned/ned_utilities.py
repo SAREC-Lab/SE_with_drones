@@ -50,6 +50,7 @@ class ned_controller:
         # print("Distance (meters):", distance)
         return distance
 
+    # Sends velocity vector message to UAV vehicle
     def send_ned_velocity(self, velocity_x, velocity_y, velocity_z, duration, vehicle):
         """
         Move vehicle in direction based on specified velocity vectors.
@@ -67,8 +68,9 @@ class ned_controller:
         for x in range(0, duration):
             vehicle.send_mavlink(msg)
 
-        time.sleep(0.1)
+        time.sleep(duration)
 
+    # Sets NED given a current and target location
     def setNed(self, current, target):
         lat_C, lon_C = rad(current.lat), rad(current.lon)
         lat_T, lon_T = rad(target.lat), rad(target.lon)

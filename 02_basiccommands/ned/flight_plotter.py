@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Graph Utilities
+Graph Utilities for plotting flight results
 """
 from pymavlink import mavutil
 import math
