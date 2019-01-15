@@ -2,22 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f39ee5-b24c-4508-b8fd-c14d8e15233d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/circleflyer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned_bodyoffset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned_example_saved.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned_old.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned_testStop.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/goto_with_ned_withswooshing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../01_gettingstarted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01_gettingstarted/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/02_basiccommands.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/02_basiccommands.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/goto.py" beforeDir="false" afterPath="$PROJECT_DIR$/goto.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ned/flight_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/flight_plotter.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ned/goto_with_ned_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/goto_with_ned_example.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ned/ned_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/ned_utilities.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/takeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeoff.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,7 +18,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/goto.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="216">
               <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="e#89#154#0" expanded="true" />
@@ -39,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ned/flight_plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            <state relative-caret-position="108">
+              <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
             </state>
           </provider>
         </entry>
@@ -51,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ned/ned_utilities.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1065">
-              <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+            <state relative-caret-position="1674">
+              <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
               <folding>
                 <element signature="e#69#98#0" expanded="true" />
               </folding>
@@ -60,14 +48,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ned/goto_with_ned_example.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
-              <folding>
-                <element signature="e#93#104#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
             </state>
           </provider>
         </entry>
@@ -89,6 +74,11 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Jane Cleland Huang &lt;janeclelandhuang@nd.edu&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -105,8 +95,8 @@
         <option value="$PROJECT_DIR$/ned_utilities.py" />
         <option value="$PROJECT_DIR$/ned/goto_with_ned.py" />
         <option value="$PROJECT_DIR$/ned/ned_utilities.py" />
-        <option value="$PROJECT_DIR$/ned/flight_plotter.py" />
         <option value="$PROJECT_DIR$/ned/goto_with_ned_example.py" />
+        <option value="$PROJECT_DIR$/ned/flight_plotter.py" />
       </list>
     </option>
   </component>
@@ -130,6 +120,11 @@
             <path>
               <item name="02_basiccommands" type="b2602c69:ProjectViewProjectNode" />
               <item name="02_basiccommands" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="02_basiccommands" type="b2602c69:ProjectViewProjectNode" />
+              <item name="02_basiccommands" type="462c0819:PsiDirectoryNode" />
+              <item name="ned" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -304,19 +299,46 @@
       <option name="project" value="LOCAL" />
       <updated>1547503102209</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Modified NED code. Changed way NED is computed.">
+      <created>1547557650433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1547557650434</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Modified NED code. Changed way NED is computed.">
+      <created>1547557665926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1547557665926</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Modified NED code. &#10;&#10;Added additional comments.  Fixed NED duration error.">
+      <created>1547558029785</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1547558029785</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Modified NED code.">
+      <created>1547558461690</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1547558461690</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1839" height="972" extended-state="6" />
-    <editor active="true" />
+    <frame x="64" y="-11" width="3111" height="1593" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80444443" visible="true" weight="0.2626652" />
-      <window_info id="Structure" order="1" sideWeight="0.19555555" side_tool="true" visible="true" weight="0.2626652" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80178326" visible="true" weight="0.15424497" />
+      <window_info id="Structure" order="1" sideWeight="0.19821674" side_tool="true" weight="0.15424497" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46745563" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25682706" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -329,10 +351,34 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.80178326" visible="true" weight="0.15424497" />
+      <window_info id="Structure" order="1" sideWeight="0.19821674" side_tool="true" visible="true" weight="0.15424497" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.25682706" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32951483" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added code for NED example" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added code for NED example" />
+    <MESSAGE value="Modified NED code. Changed way NED is computed." />
+    <MESSAGE value="Modified NED code. &#10;&#10;Added additional comments.  Fixed NED duration error." />
+    <MESSAGE value="Modified NED code." />
+    <MESSAGE value="Fixed bug in duratation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bug in duratation" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -375,21 +421,9 @@
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/goto2.py" />
-    <entry file="file://$PROJECT_DIR$/goto_with_ned_old.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2790" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goto_with_ned_withswooshing.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2910">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goto_with_ned_bodyoffset.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_old.py" />
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_withswooshing.py" />
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_bodyoffset.py" />
     <entry file="file:///usr/local/lib/python2.7/dist-packages/dronekit/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="428">
@@ -397,13 +431,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/goto_with_ned_testStop.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_testStop.py" />
     <entry file="file://$PROJECT_DIR$/takeoff.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-435">
@@ -414,49 +442,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/circleflyer.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="43" column="26" selection-start-line="35" selection-end-line="45" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goto_with_ned_example_saved.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ned/ned_utilities.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1065">
-          <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
-          <folding>
-            <element signature="e#69#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ned/flight_plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/goto_with_ned.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1026">
-          <caret line="299" column="17" lean-forward="true" selection-start-line="299" selection-start-column="17" selection-end-line="299" selection-end-column="17" />
-          <folding>
-            <element signature="e#88#153#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/circleflyer.py" />
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_example_saved.py" />
+    <entry file="file://$PROJECT_DIR$/goto_with_ned.py" />
     <entry file="file://$PROJECT_DIR$/goto.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
+        <state relative-caret-position="216">
           <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="e#89#154#0" expanded="true" />
@@ -464,13 +455,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ned/ned_utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="68" column="37" selection-start-line="68" selection-start-column="37" selection-end-line="68" selection-end-column="37" />
+          <folding>
+            <element signature="e#69#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/ned/goto_with_ned_example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
-          <folding>
-            <element signature="e#93#104#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="5" column="74" selection-start-line="5" selection-start-column="74" selection-end-line="5" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ned/flight_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
         </state>
       </provider>
     </entry>
