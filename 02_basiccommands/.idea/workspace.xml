@@ -2,24 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49f39ee5-b24c-4508-b8fd-c14d8e15233d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../01_gettingstarted/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/02_basiccommands.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/03_simplegcs.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../03_simplegcs/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../01_gettingstarted/simple_connect_DRONE.py" beforeDir="false" afterPath="$PROJECT_DIR$/../01_gettingstarted/simple_connect_DRONE.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/circleflyer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned_bodyoffset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned_example_saved.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned_old.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned_testStop.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/goto_with_ned_withswooshing.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../01_gettingstarted/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../01_gettingstarted/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/02_basiccommands.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/02_basiccommands.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/goto.py" beforeDir="false" afterPath="$PROJECT_DIR$/goto.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ned/flight_plotter.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/flight_plotter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ned/goto_with_ned_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/goto_with_ned_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ned/ned_utilities.py" beforeDir="false" afterPath="$PROJECT_DIR$/ned/ned_utilities.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/takeoff.py" beforeDir="false" afterPath="$PROJECT_DIR$/takeoff.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_simplegcs/GCS_Runner.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/GCS_Runner.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../03_simplegcs/Vehicle.py" beforeDir="false" afterPath="$PROJECT_DIR$/../03_simplegcs/Vehicle.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +26,67 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/goto.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+              <folding>
+                <element signature="e#89#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ned/flight_plotter.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ned/ned_utilities.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1065">
+              <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+              <folding>
+                <element signature="e#69#98#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ned/goto_with_ned_example.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
+              <folding>
+                <element signature="e#93#104#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>velocity</find>
+      <find>ned</find>
+      <find>Position</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -37,15 +95,26 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/goto.py" />
+        <option value="$PROJECT_DIR$/circleflyer.py" />
+        <option value="$PROJECT_DIR$/goto_with_ned.py" />
+        <option value="$PROJECT_DIR$/goto_with_ned_testStop.py" />
         <option value="$PROJECT_DIR$/takeoff.py" />
+        <option value="$PROJECT_DIR$/graph_utilities.py" />
+        <option value="$PROJECT_DIR$/flight_plotter.py" />
+        <option value="$PROJECT_DIR$/goto_with_ned_example.py" />
+        <option value="$PROJECT_DIR$/ned_utilities.py" />
+        <option value="$PROJECT_DIR$/ned/goto_with_ned.py" />
+        <option value="$PROJECT_DIR$/ned/ned_utilities.py" />
+        <option value="$PROJECT_DIR$/ned/flight_plotter.py" />
+        <option value="$PROJECT_DIR$/ned/goto_with_ned_example.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="292" />
-    <option name="y" value="24" />
-    <option name="width" value="1400" />
-    <option name="height" value="1028" />
+    <option name="x" value="65" />
+    <option name="y" value="-4" />
+    <option name="width" value="3135" />
+    <option name="height" value="1611" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -71,6 +140,16 @@
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../03_simplegcs" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ned" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -84,7 +163,28 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.goto">
+  <component name="RunManager" selected="Python.goto_with_ned_example">
+    <configuration name="circleflyer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="02_basiccommands" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/circleflyer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="goto" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="02_basiccommands" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -92,9 +192,9 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="$USER_HOME$/venv/bin/python" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/goto.py" />
@@ -106,7 +206,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="takeoff" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="goto_with_ned" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="02_basiccommands" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +218,49 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/takeoff.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/goto_with_ned.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="goto_with_ned_example" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="02_basiccommands" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/ned/goto_with_ned_example.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="goto_with_ned_testStop" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="02_basiccommands" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/goto_with_ned_testStop.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -128,13 +270,19 @@
       <method v="2" />
     </configuration>
     <list>
+      <item itemvalue="Python.goto_with_ned" />
+      <item itemvalue="Python.circleflyer" />
+      <item itemvalue="Python.goto_with_ned_testStop" />
+      <item itemvalue="Python.goto_with_ned_example" />
       <item itemvalue="Python.goto" />
-      <item itemvalue="Python.takeoff" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.goto_with_ned_example" />
+        <item itemvalue="Python.goto_with_ned" />
         <item itemvalue="Python.goto" />
-        <item itemvalue="Python.takeoff" />
+        <item itemvalue="Python.goto_with_ned_testStop" />
+        <item itemvalue="Python.circleflyer" />
       </list>
     </recent_temporary>
   </component>
@@ -149,44 +297,179 @@
       <option name="presentableId" value="Default" />
       <updated>1547079931516</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added code for NED example">
+      <created>1547503102209</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1547503102209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="64" y="-11" width="1857" height="1092" extended-state="6" />
+    <frame x="65" y="-4" width="1839" height="972" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18777293" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.80444443" visible="true" weight="0.2626652" />
+      <window_info id="Structure" order="1" sideWeight="0.19555555" side_tool="true" visible="true" weight="0.2626652" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39916405" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.46745563" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.398374" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32951483" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added code for NED example" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added code for NED example" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="ned.north" language="Python" />
+        <watch expression="ned.east" language="Python" />
+        <watch expression="abs(ned.east)" language="Python" />
+        <watch expression="scaling_factor" language="Python" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>scaling_factor</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>abs(ned.east)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ned.east</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>ned.north</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>str(ned.north)</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/goto.py">
+    <entry file="file://$PROJECT_DIR$/goto2.py" />
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_old.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="85" lean-forward="true" selection-start-line="85" selection-end-line="85" />
+        <state relative-caret-position="-2790" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_withswooshing.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2910">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_bodyoffset.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/dronekit/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="2030" selection-start-line="2030" selection-end-line="2030" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_testStop.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1230">
+          <caret line="97" lean-forward="true" selection-start-line="97" selection-end-line="97" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/takeoff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="870">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
+        <state relative-caret-position="-435">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/circleflyer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1053">
+          <caret line="43" column="26" selection-start-line="35" selection-end-line="45" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned_example_saved.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ned/ned_utilities.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1065">
+          <caret line="71" column="3" selection-start-line="71" selection-start-column="3" selection-end-line="71" selection-end-column="3" />
+          <folding>
+            <element signature="e#69#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ned/flight_plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto_with_ned.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1026">
+          <caret line="299" column="17" lean-forward="true" selection-start-line="299" selection-start-column="17" selection-end-line="299" selection-end-column="17" />
+          <folding>
+            <element signature="e#88#153#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/goto.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <folding>
+            <element signature="e#89#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ned/goto_with_ned_example.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="204" column="1" selection-start-line="204" selection-start-column="1" selection-end-line="204" selection-end-column="1" />
+          <folding>
+            <element signature="e#93#104#0" expanded="true" />
           </folding>
         </state>
       </provider>

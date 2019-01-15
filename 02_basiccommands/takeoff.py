@@ -5,8 +5,6 @@ import time
 import dronekit_sitl
 from dronekit import connect, VehicleMode, LocationGlobalRelative
 
-
-
 class VehicleWrapper():
     def initializeVehicle(self, ardupath, connection_string, home):
         self.logActive=False
