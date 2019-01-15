@@ -68,7 +68,7 @@ class ned_controller:
         for x in range(0, duration):
             vehicle.send_mavlink(msg)
 
-        time.sleep(duration)
+        time.sleep(0.1)
 
     # Sets NED given a current and target location
     def setNed(self, current, target):
