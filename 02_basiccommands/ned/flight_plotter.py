@@ -23,10 +23,16 @@ class CoordinateLogger:
         self.lon_array = []
 
     def add_data(self,latitude,longitude):
+        """
+
+        :rtype: object
+        """
         self.lat_array.append([])
         self.lon_array.append([])
         self.lat_array[-1].append(latitude)
         self.lon_array[-1].append(longitude)
+
+
 
 class GraphPlotter:
     def __init__(self,lat1_array,lon1_array,lat2_array,lon2_array,xlabel="",ylabel="",title=""):
@@ -37,12 +43,20 @@ class GraphPlotter:
         self.xlegend = xlabel
         self.ylegend=ylabel
         self.title=title
+        self.marker_lat = 0
+        self.marker_lon = 0
+
+    def add_marker(self,markerlat,markerlon):
+        self.marker_lat = markerlat
+        self.marker_lon = markerlon
 
     def scatter_plot(self):
-        plt.plot(self.lat1_array,self.lon1_array)
-        plt.plot(self.lat2_array,self.lon2_array)
+        plt.plot(self.lat1_array,self.lon1_array,linewidth=10,color='gray')
+        plt.plot(self.lat2_array,self.lon2_array,linewidth=4,color='blue')
         plt.xlabel(self.xlegend)
         plt.ylabel(self.ylegend)
         plt.title(self.title)
+        if self.marker_lat != 0:
+            plt.plot([self.marker_lat], [self.marker_lon], "ro", markersize=22)
         plt.show()
 

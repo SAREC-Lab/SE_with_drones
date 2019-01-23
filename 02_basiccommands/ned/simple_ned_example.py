@@ -142,7 +142,7 @@ def fly_to(vehicle, targetLocation, groundspeed):
         print(remainingDistance)
         if remainingDistance < 1:
             print("Reached target")
-            break;
+            break
         time.sleep(1)
 
 def point_on_circle(radius, angle_indegrees, latitude, longitude):
@@ -159,73 +159,68 @@ def point_on_circle(radius, angle_indegrees, latitude, longitude):
 ############################################################################################
 # Main functionality
 ############################################################################################
-
 arm_and_takeoff(10)
+
+log1 = CoordinateLogger()
+log2 = CoordinateLogger()
+currentLocation = Location(vehicle.location.global_relative_frame.lat, vehicle.location.global_relative_frame.lon)
+log2.add_data(currentLocation.lon,currentLocation.lat)
+log1.add_data(currentLocation.lon,currentLocation.lat)
+#print("Current position: {1},{2} ".format(currentLocation.lat, currentLocation.lon))
+print("Current position: " + str(currentLocation.lat) + "," + str(currentLocation.lon))
 
 # Get current location of vehicle and establish a conceptual circle around it for flying
 center = Location(vehicle.location.global_relative_frame.lat,
                   vehicle.location.global_relative_frame.lon)  # 83.456453, 43.987633)
-radius = .0001
-angle = 0  #Starting angle
 
-# Fly close to starting position using waypoint
-currentLocation = center
-startingPos = point_on_circle(radius*.95, angle+1, center.lat, center.lon)  # Close to first position on circle perimeter
-firstTargetPosition = LocationGlobalRelative(startingPos.lat, startingPos.lon, 10)
-fly_to(vehicle, firstTargetPosition, 10)
-
-# Establish a starting angle to compute next position on circle
-angle = 0
-
+startingPosition = vehicle.location.global_relative_frame
 # Establish an instance of CoordinateLogger
-log1 = CoordinateLogger()
 
 nedcontroller = ned_controller()
+nextTarget = LocationGlobalRelative(currentLocation.lat, -86.2415000, 10)
+
+print("Target position: " + str(nextTarget.lat) + ", " + str(nextTarget.lon))
+
+# Add target location to both logs.
+# Note this is the final target
+log2.add_data(nextTarget.lon,nextTarget.lat)
+log1.add_data(nextTarget.lon,nextTarget.lat)
 
 
-waypoint_goto = False;
-while angle <= 360:
+currentLocation = Location(vehicle.location.global_relative_frame.lat, vehicle.location.global_relative_frame.lon)
+###########################################################################
+# Create the target coordinates
+###########################################################################
+print ("Center: " + str(center.lat) + " " + str(center.lon))
 
-    # For NED flying compute the NED Velocity vector
-    print("\nNew target " + str(angle))
-    nextTarget = (point_on_circle(radius, angle, center.lat, center.lon))
+currentLocation = Location(vehicle.location.global_relative_frame.lat, vehicle.location.global_relative_frame.lon)
+distance_to_target = get_distance_meters(currentLocation, nextTarget)
+closestDistance=distance_to_target
+ned = nedcontroller.setNed(currentLocation, nextTarget)
+
+
+
+print("Distance: " + str(distance_to_target))
+while get_distance_meters(currentLocation,nextTarget) > 1:
+    ned = nedcontroller.setNed(currentLocation, nextTarget)
+    nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 1, vehicle)
+    #Log data
+    log1.add_data(vehicle.location.global_relative_frame.lon,vehicle.location.global_relative_frame.lat)
     currentLocation = Location(vehicle.location.global_relative_frame.lat, vehicle.location.global_relative_frame.lon)
     distance_to_target = get_distance_meters(currentLocation, nextTarget)
-    closestDistance=distance_to_target
-    ned = nedcontroller.setNed(currentLocation, nextTarget)
-
-
-    while distance_to_target > 1:
-        currentLocation = Location(vehicle.location.global_relative_frame.lat,
-                                   vehicle.location.global_relative_frame.lon)
-        distance_to_target = get_distance_meters(currentLocation, nextTarget)
-        print ('Current Pos: (' + str(currentLocation.lat) + "," + str(currentLocation.lon) +
-               ') Target Pos: ' + str(nextTarget.lat) + ' Target  lon: ' + str(nextTarget.lon) + ' Distance: ' + str(
-                    distance_to_target) + " NED: " + str(ned.north) + " " + str(ned.east))
-
-        if distance_to_target > closestDistance: #Prevent unwanted fly-by
-            break
-        else:
-            closestDistance = distance_to_target
-
-        currentLocation = Location(vehicle.location.global_relative_frame.lat,
-                                   vehicle.location.global_relative_frame.lon)
-        ned = nedcontroller.setNed(currentLocation, nextTarget)
-
-        # Either fly using waypoints or NEDs
-        if waypoint_goto == True:
-            firstTargetPosition = LocationGlobalRelative(nextTarget.lat, nextTarget.lon, 10)
-            fly_to(vehicle, firstTargetPosition, 10)
-        else:
-            nedcontroller.send_ned_velocity(ned.north, ned.east, ned.down, 1, vehicle)
-
-        #Log data
-        log1.add_data(currentLocation.lat,currentLocation.lon)
-
-    angle = angle + 1
+    print ("Current Pos: ({0},{1}) Target Pos: {2},{3} NED: {4},{5} Distance: {6}".format(
+        str(currentLocation.lat), str(currentLocation.lon), str(nextTarget.lat), str(nextTarget.lon), str(ned.north),
+        str(ned.east), str(
+            distance_to_target)))
 
 print("Returning to Launch")
+
+
+
+
 vehicle.mode = VehicleMode("RTL")
+
+
 # Close vehicle object before exiting script
 print("Close vehicle object")
 vehicle.close()
@@ -234,15 +229,7 @@ vehicle.close()
 if sitl is not None:
     sitl.stop()
 
-###########################################################################
-# Create the target coordinates
-###########################################################################
-log2 = CoordinateLogger()
-angle = 0
-while angle <= 360:
-    point = (point_on_circle(radius, angle, center.lat, center.lon))
-    log2.add_data(point.lat,point.lon)
-    angle = angle + 1
+
 
 ###########################################################################
 # Plot graph
