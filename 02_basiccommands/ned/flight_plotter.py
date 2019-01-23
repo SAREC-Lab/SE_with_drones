@@ -33,7 +33,9 @@ class CoordinateLogger:
         self.lon_array[-1].append(longitude)
 
 
-
+##############################################################################################
+# Provides Graph Plotting functionality
+##############################################################################################
 class GraphPlotter:
     def __init__(self,lat1_array,lon1_array,lat2_array,lon2_array,xlabel="",ylabel="",title=""):
         self.lat1_array=lat1_array
