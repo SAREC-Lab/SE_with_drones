@@ -133,11 +133,11 @@ class ned_controller:
         n, e, d = np.dot(R_EN.T, p_CT_E).ravel()
 
         #Scale Nedvalues
-        #if n > e:
-        #    scaleFactor = abs(1.00000/n)
-        #else:
-        #    scaleFactor = abs(1.00000/e)
+        if n > e:
+            scaleFactor = abs(1.00000/n)
+        else:
+            scaleFactor = abs(1.00000/e)
 
-        #return Nedvalues(n*scaleFactor, e*scaleFactor, d)
-        return Nedvalues(n,e,d)
+        return Nedvalues(n*scaleFactor, e*scaleFactor, d)
+        #return Nedvalues(n,e,d)
 
