@@ -4,7 +4,6 @@ import json
 import os
 import time
 import flightmanager
-from copter import UAV_Copter
 from ground_control_station import SimpleGCS
 
 def load_json(path2file):
