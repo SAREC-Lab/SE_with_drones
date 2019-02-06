@@ -156,6 +156,8 @@ class Connection:
                     msg = self._sock.recv_until(os.linesep, timeout=0.1)
                     if self._msgs is not None:
                         self._msgs.append(msg)
+                        print ("Message received")
+                        print (msg)
                 except socket.timeout:
                     pass
                 except socket.error as e:

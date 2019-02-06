@@ -1,13 +1,7 @@
-import os
 import sys
-import threading
-
-import dronekit_sitl
 from dronekit import connect, VehicleMode, LocationGlobalRelative
 import time
 import UtilFunctions as util
-import simplegcs as simplegcs
-
 
 def arm_and_takeoff(vehicle, aTargetAltitude):
     """
@@ -77,14 +71,13 @@ def fly_to(vehicle, targetLocation, groundspeed):
     vehicle.groundspeed = groundspeed
     currentTargetLocation = targetLocation
     vehicle.simple_goto(currentTargetLocation)
-    remainingDistance = util.get_distance_meters(currentTargetLocation, vehicle.location.global_relative_frame)
 
     while vehicle.mode.name == "GUIDED":
         remainingDistance = util.get_distance_meters(currentTargetLocation, vehicle.location.global_relative_frame)
         # print("Distance to target: "+str(remainingDistance))
         if remainingDistance < 1:
             print("Reached target "+ str(remainingDistance))
-            break;
+            break
         time.sleep(1)
 
 def get_location(vehicle):
